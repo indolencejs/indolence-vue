@@ -1,0 +1,1 @@
+# Indolence.js Vue Adapter
