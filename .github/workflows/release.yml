@@ -20,6 +20,9 @@ jobs:
         env:
           CI: true
         run: npm ci
+      - name: Build
+        if: success()
+        run: npm run build
       - name: Release
         if: success()
         env:

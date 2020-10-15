@@ -22,8 +22,8 @@
         "dev": "webpack --mode=development --progress",
         "prod": "webpack --mode=production --progress",
         "types": "tsc -p tsconfig.json --emitDeclarationOnly --skipLibCheck",
-        "postprod": "echo npm run types",
         "report": "[[ -f ./bundle-stats.html ]] && open ./bundle-stats.html || echo 'Report not found!'",
+        "build": "webpack --mode=production --no-stats-all",
         "semantic-release": "semantic-release"
     },
     "devDependencies": {
