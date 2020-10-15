@@ -47,6 +47,15 @@ const config = {
     htmlWhitespaceSensitivity: 'css',
 
     endOfLine: 'lf',
+
+    overrides: [
+        {
+            files: ['**/*.yml'],
+            options: {
+                tabWidth: 2,
+            },
+        },
+    ],
 };
 
 module.exports = config;

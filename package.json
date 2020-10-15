@@ -1,50 +1,58 @@
 {
-    "name": "@indolencejs/indolence-vue",
-    "version": "0.1.0",
-    "license": "MIT",
-    "description": "The Vue adapter for Indolence.js",
-    "author": {
-        "name": "Neil Smith",
-        "email": "nmsmith22389@gmail.com",
-        "url": "https://github.com/nmsmith22389"
-    },
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "files": [
-        "dist",
-        "!dist/*.LICENSE.txt"
-    ],
-    "scripts": {
-        "clean": "rm -rf ./dist",
-        "dev": "webpack --mode=development --progress",
-        "prod": "webpack --mode=production --progress",
-        "types": "tsc -p tsconfig.json --emitDeclarationOnly --skipLibCheck",
-        "postprod": "echo npm run types",
-        "report": "[[ -f ./bundle-stats.html ]] && open ./bundle-stats.html || echo 'Report not found!'"
-    },
-    "devDependencies": {
-        "@smith-web-design/eslint-config": "^2.0.6",
-        "@typescript-eslint/eslint-plugin": "^4.4.0",
-        "@typescript-eslint/parser": "^4.4.0",
-        "bundle-stats-webpack-plugin": "^2.2.0",
-        "clean-webpack-plugin": "^3.0.0",
-        "cross-env": "^7.0.2",
-        "dts-bundle": "^0.7.3",
-        "eslint": "^7.11.0",
-        "eslint-plugin-import": "^2.22.1",
-        "fork-ts-checker-notifier-webpack-plugin": "^3.0.0",
-        "fork-ts-checker-webpack-plugin": "^5.2.0",
-        "ts-loader": "^8.0.4",
-        "ts-node": "^9.0.0",
-        "typescript": "^4.0.3",
-        "vue": "^2.6.12",
-        "vue-class-component": "^7.2.6",
-        "vue-property-decorator": "^9.0.2",
-        "webpack": "^5.0.0-rc.5",
-        "webpack-cli": "^4.0.0-rc.1",
-        "webpack-messages": "^2.0.4"
-    },
-    "peerDependencies": {
-        "vue": "^2.0.0"
-    }
+  "name": "@indolencejs/indolence-vue",
+  "version": "0.0.0-development",
+  "license": "MIT",
+  "description": "The Vue adapter for Indolence.js",
+  "author": {
+    "name": "Neil Smith",
+    "email": "nmsmith22389@gmail.com",
+    "url": "https://github.com/nmsmith22389"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "!dist/*.LICENSE.txt"
+  ],
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "dev": "webpack --mode=development --progress",
+    "prod": "webpack --mode=production --progress",
+    "types": "tsc -p tsconfig.json --emitDeclarationOnly --skipLibCheck",
+    "postprod": "echo npm run types",
+    "report": "[[ -f ./bundle-stats.html ]] && open ./bundle-stats.html || echo 'Report not found!'",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@smith-web-design/eslint-config": "^2.0.6",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "bundle-stats-webpack-plugin": "^2.2.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "dts-bundle": "^0.7.3",
+    "eslint": "^7.11.0",
+    "eslint-plugin-import": "^2.22.1",
+    "fork-ts-checker-notifier-webpack-plugin": "^3.0.0",
+    "fork-ts-checker-webpack-plugin": "^5.2.0",
+    "semantic-release": "^17.2.1",
+    "ts-loader": "^8.0.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3",
+    "vue": "^2.6.12",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.0.2",
+    "webpack": "^5.0.0-rc.5",
+    "webpack-cli": "^4.0.0-rc.1",
+    "webpack-messages": "^2.0.4"
+  },
+  "peerDependencies": {
+    "vue": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/indolencejs/indolence-vue.git"
+  }
 }
