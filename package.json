@@ -1,6 +1,6 @@
 {
     "name": "@indolencejs/indolence-vue",
-    "version": "0.0.0-development",
+    "version": "1.0.0",
     "license": "MIT",
     "description": "The Vue adapter for Indolence.js",
     "author": {
