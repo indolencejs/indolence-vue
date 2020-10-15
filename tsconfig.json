@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "declaration": true,
+        "declarationDir": "./dist",
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        // "importsNotUsedAsValues": "preserve",
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "outDir": "./dist",
+        "sourceMap": true,
+        "strict": true,
+        "target": "es5"
+        // "allowJs": true
+    },
+    "include": ["./src/**/*"],
+    "exclude": ["./node_modules", "./dist"]
+}
